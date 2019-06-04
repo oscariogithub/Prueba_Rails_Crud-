@@ -1,0 +1,43 @@
+<div class= "text-center text-light bg-dark ">
+<h1>Estado de tareas (a la fecha)</h1>
+</div>
+
+
+<div class= "row">
+    
+    <div class= "col-lg-6">
+        <h1>Tareas No Completadas</h1>
+    
+        <% @todos.each do |todo| %>
+            <div>
+                <% if !todo.completed  %> 
+                    <%= todo.description %>
+                    
+                <% end %>
+            </div>
+            
+        <% end %>
+        
+    </div>
+    
+    <div class= "col-lg-6">
+        <h1>Tareas Completadas</h1>
+        
+        <% @todos.each do |todo| %>
+        <div>
+           <% if todo.completed  %> 
+                <%= todo.description %>
+                
+            <% end %>
+        </div>
+        
+        <% end %>
+    </div>
+
+
+</div>
+
+
+
+<br>
+<%= link_to "Back", todos_path %>

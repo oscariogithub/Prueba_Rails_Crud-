@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+ body {
+    background-image: url("https://www.latercera.com/wp-content/uploads/2018/03/cobre-3-1-1023x573-1-900x573.jpg");
+   color:white;
+   text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+
+   }
+
