@@ -1,0 +1,26 @@
+<div align="center" >
+
+
+    <h1>Lista de Tareas</h1>
+
+    <div class= "container">
+
+        <% @todos.each do |todo| %>
+                <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                <h5><p class="card-title"><%= todo.description %></p></h5>
+                <p class="card-text"> <%= todo.completed %></p>
+                                        
+                </div>
+                <%= link_to "Show", todo %>
+                <%= link_to "Edit", edit_path(todo) %>
+                <%= link_to "Destroy", todo, method: :delete %>    
+                </div>    
+        <% end %>
+        
+    </div>
+
+    <br>
+    <%= link_to "Nuevo", todos_new_path %>
+
+<div>

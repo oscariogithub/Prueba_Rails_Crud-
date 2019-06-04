@@ -1,0 +1,10 @@
+<h1>Tarea</h1>
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5><p class="card-title"><%=   @todo.description %></p></h5>
+        <p class="card-text"> <%= @todo.completed %></p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
+
+<%= link_to "Back", todos_path %>
